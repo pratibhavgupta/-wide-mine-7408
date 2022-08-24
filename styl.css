@@ -1,0 +1,100 @@
+body{
+    margin:0px;
+}
+#top{
+    background-color: black;
+    height:40px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    
+}
+#top >div{
+    display: flex;
+    gap:10px;
+    margin: 0px 60px 0px 60px;
+    align-items: center;
+    font-family:ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" ;
+}
+#top >div:first-child{
+    gap:30px;
+    font-size: 14px;
+}
+#top >div:last-child{
+    gap:15px;
+    font-size: 12px;
+}
+
+.withIcon{
+    display:flex;
+    gap:8px;
+}
+.withIcon >img {
+    margin: auto;
+    color: white;
+}
+.vl{
+    border-left: 1px solid #5d5e5c;
+    height:20px;
+}
+#top a{
+    text-decoration: none;
+    color: white;
+}
+#navbar{
+    height:70px;
+    background-color:#f7f8f7;
+    display:flex;
+    justify-content: space-between;
+    padding:0px;
+    
+}
+#navbar >div{
+    display: flex;
+   margin: auto;
+   align-items: center;
+}
+
+#navbar >div:first-child > img{
+    width:10%;
+    margin-right: 20px;
+    
+}
+#navbar input{
+    font-size: 14px;
+    width:220%;
+    height: 40px;
+    background-color: #ecedeb;
+    border: none;
+}
+#navbar form{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #ecedeb;
+}  
+#navbar form > img{
+    width:5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}  
+#navbar a{
+    text-decoration: none;
+    color:black;
+}
+.hov:hover{
+    background-color: white;
+    height:100%;
+}
+.hov{
+    width:8%;
+    text-align: center;
+}
+#navbar > div:last-child{
+    gap:8px;
+    width:18%;
+}
+#navbar >div:last-child > img{
+    width:8%;
+    margin-left: 13px;;
+}
