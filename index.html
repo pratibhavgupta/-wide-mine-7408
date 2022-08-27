@@ -15,7 +15,7 @@
                     <p>Free Shipping</p> 
                 </div>
                 <div class="withIcon">
-                    <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/cc.svg" alt="">
+                    <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/RTS-icon-19Nov2019.png" alt="">
                     <p>Return to Store</p> 
                 </div>
                 <div class="withIcon">
@@ -40,7 +40,7 @@
         </div>
         <div id="navbar">
             <div>
-                <img src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">
+                <img onClick="homes()" id="currentPage" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">
                 <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxwomen"> Women</a></p></div>    
                 <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxmen"> Men</a></p></div>
                 <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxgirls"> Girls</a></p></div>
@@ -55,9 +55,9 @@
             <div>
                 <p>More</p>
                 <div class="vl"></div>
-                <p onClick="signIn()">Sign Up / Sign In</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">
+                <p id="fun" onClick="signIn()">Sign Up / Sign In</p>
+                <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+                <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">
                 
             </div>
         </div>
@@ -66,7 +66,10 @@
         </div>
         <div id="slide">
             <button> < </button>
-            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-18Aug2022.png" alt="">
+            <a href="womens.html">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-18Aug2022.png" alt="">
+            </a>
+            
             <button>></button>
         </div>
         <div id="hrBorder">
@@ -292,7 +295,7 @@
                     <p>Get our latest offers and news straight in your inbox.</p>
                     <form action="">
                         <input type="email" placeholder="Please enter an email address">
-                        <button>Subscribe</button>
+                        <button onClick="store()">Subscribe</button>
                         
                     </form>
                     <p id="valid"></p>
@@ -522,11 +525,30 @@
         function myOffer(){
             document.location.href="https://www.maxfashion.in/in/en/search?q";
         }
+       
         function signIn(){
-           let log= document.createElement("form");
-           
-
+           document.location.href="Login.html";
         }
        
+        let emailArr=JSON.parse(localStorage.getItem("email-data")) || [];
+        function store(){
+            let email=document.querySelector("#first input").value;
+            emailArr.push(email);
+            localStorage.setItem("email-data",JSON.stringify(emailArr));
+        }
+       
+        let home=document.querySelector("#currentPage");
+        home.style.cursor="pointer";
+        function homes(){
+            document.location.href="index.html";
+        }
+        
+        function cart(){
+            document.location.href="cart.html";
+        }
+
+        function fav(){
+            document.location.href="fav.html";
+        }
     </script>
 </html>

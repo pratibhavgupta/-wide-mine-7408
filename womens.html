@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="top">
+      <div>
+        <div class="withIcon">
+          <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg" alt=""> 
+          <p>Free Shipping</p> 
+        </div>
+        <div class="withIcon">
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/RTS-icon-19Nov2019.png" alt="">
+          <p>Return to Store</p> 
+        </div>
+        <div class="withIcon">
+          <img src="https://i.postimg.cc/pd5H1H0s/Desktop-regular.png" alt="">
+          <p>Click & collect</p> 
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="https://www.maxfashion.in/in/en/apps" > Download Our App</a>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <a href="https://www.maxfashion.in/in/en/storelocator" >Store Locator</a>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <a href="https://helpin.maxfashion.com/support/home#" >Help</a>
+        </div>
+      </div>
+    </div>
+    <div id="navbar">
+        <div>
+          <img onClick="homes()" id="currentPage" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxwomen"> Women</a></p></div>    
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxmen"> Men</a></p></div>
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxgirls"> Girls</a></p></div>
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxboys">Boys</a></p></div>
+          <form action="">
+            <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="">
+            <div>
+              <input placeholder="What are you looking for?">
+            </div>
+          </form>     
+        </div>
+        <div>
+          <p>More</p>
+          <div class="vl"></div>
+          <p id="fun" onClick="signIn()">Sign Up / Sign In</p>
+          <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+          <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">         
+        </div>
+    </div>
+    <h1>You searched for “”</h1>
+    <div id="container">
+      <h4>Shop For</h4>
+      <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499%3AallCategories%3Amaxwomen-tops">
+        <div>
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxwomen-tops-topsandtees.jpg" alt="">
+          <p>Tops</p>
+        </div>
+      </a>
+      <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499%3AallCategories%3Amaxwomen-ethnicwear">
+        <div>
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxwomen-indianwear-fashionbottoms.jpg" alt="">
+          <p>Indian wear</p>
+        </div>
+      </a>
+      <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499%3AallCategories%3Amaxwomen-young">
+        <div>
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-young.jpg" alt="">
+          <p>Young</p>
+        </div>
+      </a>
+      <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499%3AallCategories%3Amaxwomen-accessories">
+        <div>
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxwomen-accessories-bags.jpg" alt="">
+          <p>Accessories</p>
+        </div>
+      </a>
+      <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499%3AallCategories%3Amaxwomen-winterwear">
+        <div>
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxwomen-winterwear-jackets.jpg" alt="">
+          <p>Winterwear</p>
+        </div>
+      </a>
+    </div>
+    <div id="sort">
+      <select name="" id="price">
+        <option value="">Price</option>
+        <option value="Low to High">Low to High</option>
+        <option value="High to Low ">High to Low</option>
+      </select>
+      <select name="" id="color">
+        <option value="">Color</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="White">White</option>
+        <option value="Green">Green</option>
+      </select>
+      <select name="" id="name">
+        <option value="">Order</option>
+        <option value="Ascending">Ascending</option>
+        <option value="Descending">Descending</option>
+      </select>
+    </div>
+    <div id="product"></div>
+
+    <hr class="full">
+        <div id="footer">
+            <div id="first">
+                <div>
+                    <h2>Subscribe to our awesome emails.</h2>
+                    <p>Get our latest offers and news straight in your inbox.</p>
+                    <form action="">
+                        <input type="email" placeholder="Please enter an email address">
+                        <button onClick="store()">Subscribe</button>
+                        
+                    </form>
+                    <p id="valid"></p>
+                </div>
+                <div>
+                    <h2>Download our apps</h2>
+                    <p>Shop our products and offers on-the-go.</p>
+                    <div>
+                        <a href="https://itunes.apple.com/us/app/max-fashion/id1180884624?ls=1&mt=8">
+                            <img src="https://i1.lmsin.net/website_images/misc/apple-app-store.svg" alt="">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.applications.max">
+                            <img src="https://i1.lmsin.net/website_images/misc/google-play-store.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="second">
+                <div>
+                    <h4>Women</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-dressesandjumpsuits">
+                        <p>Dresses & Jumpsuits</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-sportswear">
+                        <p>Sportswear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-winterwear">
+                        <p>Winterwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear">
+                        <p>Ethnicwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-lingerie">
+                        <p>Lingerie</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-sleepwear">
+                        <p>Sleepwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxaccessories-women">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxshoes-women">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Men</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-winterwear">
+                        <p>Winterwear</p>
+                    </a>    
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Boys</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-indianwear">
+                        <p>Indian Wear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-winterwear">
+                        <p>Winter Wear</p>
+                    </a> 
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-essentials">
+                        <p>Essentials</p>
+                    </a>   
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Girls</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-indianwear">
+                        <p>Indian Wear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-winterwear">
+                        <p>Winter Wear</p>
+                    </a> 
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-essentials">
+                        <p>Essentials</p>
+                    </a>   
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <a href="https://www.maxfashion.in/in/en/offers">
+                        <p>Offers</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/magazine">
+                        <p>Magazine</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>About</h4>
+                    <a href="https://www.maxfashion.in/in/en/about">
+                        <p>About us</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/write-to-us">
+                        <p>Write to us</p>
+                    </a>
+                    <a href="https://www.linkedin.com/company/max-fashion-india/jobs/">
+                        <p>Careers</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/tour">
+                        <p>Take a Tour</p>
+                    </a>
+                    <a href="https://maxloves.maxfashion.in/">
+                        <p>Blog</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/storelocator">
+                        <p>Store Locator</p>
+                    </a>
+                    <a href="http://landmarkcares.in/">
+                        <p>Landmark</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <a href="https://www.maxfashion.in/in/en/contact">
+                        <p>Contact us</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/helpShipping">
+                        <p>Shipping</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/return">
+                        <p>Returns Process</p>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/support/solutions/folders/9000196215">
+                        <p>Returns Policy</p>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/">
+                        <p>Help Centre</p>
+                    </a>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="third">
+                <div>
+                    <a href="tel:1800-123-1444">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-phone.svg" alt="">
+                            <div>
+                                <p>Talk to us</p>
+                                <p>1800-123-1444</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-help.svg" alt="">
+                            <div>
+                                <p>Helpcentre</p>
+                                <p>help.maxfashion.in</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/write-to-us">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-mail.svg" alt="">
+                            <div>
+                                <p>Write to us</p>
+                                <p>help.in@maxfashion.com</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/maxfashions/">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/fb-icon.svg" alt="">
+                    </a>
+                    <a href="https://www.twitter.com/@maxfashionindia">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/twitter-icon.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/maxfashionindia">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/instagram-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="fourth">
+                <a href="https://www.maxfashion.in/in/en/">
+                    <img src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">  
+                </a>
+                <div>
+                    <p>© 2022 RNA Intellectual Property Limited. <br><a href="https://www.maxfashion.in/in/en/termsandconditions">Terms & Conditions</a> - <a href="https://www.maxfashion.in/in/en/privacypolicy">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+  </body>
+  <script>
+
+    function signIn(){
+      document.location.href="Login.html";
+    }
+
+    function cart(){
+      document.location.href="cart.html";
+    }
+
+    function fav(){
+      document.location.href="fav.html";
+    }
+
+    let home=document.querySelector("#currentPage");
+    home.style.cursor="pointer";
+    function homes(){
+      document.location.href="index.html";
+    }
+
+    let emailArr=JSON.parse(localStorage.getItem("email-data")) || [];
+        function store(){
+            let email=document.querySelector("#first input").value;
+            emailArr.push(email);
+            localStorage.setItem("email-data",JSON.stringify(emailArr));
+        }
+
+    let prodArr=[
+      {name:"MAX Women Schiffli Detail T-Shirt",price:399,color:"Black",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Black-MAX-Women-Schiffli-Detail-T-Shirt/p/1000010902250-Black-BLACK",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010902250-Black-BLACK-1000010902250-29122021_01-2100.jpg"},
+      {name:"MAX Women Camouflage Print Knit T-shirt",price:599,color:"Green",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Green-MAX-Women-Camouflage-Print-Knit-T-shirt/p/1000010350454-Green-Oliveg",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010350454-Green-Oliveg-1000010350454-11232021_01-2100.jpg"},
+      {name:"MAX Women Solid Open-Front Shrug",price:699,color:"Black",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Black-MAX-Women-Solid-Open-Front-Shrug/p/1000011419030-Black-BLACKP",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011419030-Black-BLACKP-1000011419030-29052022_01-2100.jpg"},
+      {name:"MAX Women Textured Round Neck T-shirt",price:399,color:"Blue",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Blue-MAX-Women-Textured-Round-Neck-T-shirt/p/1000011386163-Blue-ARUBA",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011386163-Blue-ARUBA-1000011386163-19062022_01-2100.jpg"},
+      {name:"MAX Women Solid Elasticated Joggers",price:799,color:"Blue",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Black-MAX-Women-Solid-Elasticated-Joggers/p/1000011394866-Blue-NAVYP",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011394866-Blue-NAVYP-1000011394866-05062022_01-2100.jpg"},
+      {name:"MAX Women Printed Drawstring Waist Pyjamas",price:499,color:"Blue",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Blue-MAX-Women-Printed-Drawstring-Waist-Pyjamas/p/1000010266523-Blue-Skyblue",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010266523-Blue-Skyblue-1000010266523-8182021_01-2100.jpg"},
+      {name:"MAX Women Solid Elasticated Joggers",price:549,color:"Black",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Black-MAX-Women-Solid-Elasticated-Joggers/p/1000011394866-Black-BLACK",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011394866-Black-BLACK-1000011394866-05062022_01-2100.jpg"},
+      {name:"MAX Women Printed Round Neck T-shirt",price:349,color:"White",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-White-MAX-Women-Printed-Round-Neck-T-shirt/p/1000011546128-White-WHITE",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011546128-White-WHITE-1000011546128-09072022_01-2100.jpg"},
+      {name:"MAX Women Printed Round Neck T-shirt with Elasticated Capris",price:599,color:"Green",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Green-MAX-Women-Printed-Round-Neck-T-shirt-with-Elasticated-Capris/p/1000011294796-Green-JADE",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011294796-Green-JADE-1000011294796-29052022_01-2100.jpg"},
+      {name:"MAX Women Printed Round Neck T-shirt",price:399,color:"White",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-White-MAX-Women-Printed-Round-Neck-T-shirt/p/1000011348463-White-WHITEP",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011348463-White-WHITEP-1000011348463-21052022_01-2100.jpg"},
+      {name:"MAX Women Solid Full-Length Track Pants",price:799,color:"Green",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Green-MAX-Women-Solid-Full-Length-Track-Pants/p/1000011387390-Green-OLIVEGREENP",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011387390-Green-OLIVEGREENP-1000011387390-05062022_01-2100.jpg"},
+      {name:"MAX Women Printed Drawstring Waist Lounge Pyjamas",price:599,color:"Green",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Green-MAX-Women-Printed-Drawstring-Waist-Lounge-Pyjamas/p/1000011294952-Green-TEAL",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011294952-Green-TEAL-1000011294952-11052022_01-2100.jpg"},
+      {name:"MAX Women Printed Round Neck T-shirt",price:299,color:"White",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-White-MAX-Women-Printed-Round-Neck-T-shirt/p/1000011348463-White-WHITE",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011348463-White-WHITE-1000011348463-21052022_01-2100.jpg"},
+      {name:"MAX Women Textured Round Neck T-shirt",price:399,color:"White",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Purple-MAX-Women-Textured-Round-Neck-T-shirt/p/1000011257605-White-WHITEP",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011257605-White-WHITEP-1000011257605-21052022_01-2100.jpg"},
+      {name:"MAX Women Printed Lounge Capris",price:449,color:"Pink",pageUrl:"https://www.maxfashion.in/in/en/SHOP-Max-Pink-MAX-Women-Printed-Lounge-Capris/p/1000010702276-Pink-Fuchsia",imgUrl:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010702276-Pink-Fuchsia-1000010702276-9222021_01-2100.jpg"}
+    ];
+    
+    let favArr=JSON.parse(localStorage.getItem("fav-item")) || [];
+    let cartArr=JSON.parse(localStorage.getItem("cart-item")) || [];
+    displayProduct(prodArr);
+    function displayProduct(prodArr){
+      document.querySelector("#product").innerHTML="";
+
+      prodArr.map(function(elem){
+        let box=document.createElement("div");
+        let cont=document.createElement("div");
+        let hold=document.createElement("div");
+        hold.style.display="flex";
+        hold.style.gap="60px";
+        
+        let image=document.createElement("img");
+        image.setAttribute("src",elem.imgUrl);
+
+        let para=document.createElement("p");
+        para.innerText=elem.name;
+
+        let money=document.createElement("p");
+        money.innerText= "₹ " + elem.price;
+
+        let btn=document.createElement("button");
+        btn.innerText="Add to Cart";
+        btn.addEventListener("click",function (){
+          cartArr.push(elem);
+          btn.innerText="Add+ to Cart";
+          localStorage.setItem("fav-item", JSON.stringify(cartArr));
+       });
+
+       let btn1=document.createElement("button");
+        btn1.innerText="Add to Fav";
+        btn1.addEventListener("click",function (){
+          favArr.push(elem);
+          btn1.innerText="Add+ to Fav";
+          localStorage.setItem("cart-item", JSON.stringify(favArr));
+       });
+      
+        box.append(image,money,para);
+        let anchor=document.createElement("a");
+        anchor.setAttribute("href",elem.pageUrl)
+        anchor.append(box);
+        hold.append(btn,btn1);
+        cont.append(anchor,hold);
+        document.querySelector('#product').append(cont);
+     }) 
+
+
+    }
+    document.querySelector("#price").addEventListener("change",myfun);
+    function myfun(){
+      let selected=document.querySelector("#price").value
+      if(selected==="Low to High"){
+        prodArr.sort(function(a,b){
+          if (a.price > b.price)  return 1;
+          if (a.price < b.price)  return -1;
+          return 0;
+        });
+      }else{
+        prodArr.sort(function(a,b){
+          if (a.price > b.price)  return -1;
+          if (a.price < b.price)  return 1;
+          return 0;
+        });
+      }
+      displayProduct(prodArr);
+    }
+    
+    document.querySelector("#name").addEventListener("change",sortAlpha);
+    function sortAlpha(){
+      let selected=document.querySelector("#name").value
+      if(selected==="Ascending"){
+        prodArr.sort(function(a,b){
+          if (a.name > b.name)  return 1;
+          if (a.name < b.name)  return -1;
+          return 0;
+        });
+      }else{
+        prodArr.sort(function(a,b){
+          if (a.name > b.name)  return -1;
+          if (a.name < b.name)  return 1;
+          return 0;
+        });
+      }
+      displayProduct(prodArr);
+    }      
+      
+    document.querySelector("#color").addEventListener("change",prodFilter);
+    function prodFilter(){
+      let col=document.querySelector("#color").value;
+      let filt=prodArr.filter(function(elem){
+        return col==elem.color;
+      });
+      displayProduct(filt);
+    }    
+            
+
+    
+  </script>
+</html>

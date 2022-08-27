@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="top">
+      <div>
+        <div class="withIcon">
+          <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg" alt=""> 
+          <p>Free Shipping</p> 
+        </div>
+        <div class="withIcon">
+          <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/RTS-icon-19Nov2019.png" alt="">
+          <p>Return to Store</p> 
+        </div>
+        <div class="withIcon">
+          <img src="https://i.postimg.cc/pd5H1H0s/Desktop-regular.png" alt="">
+          <p>Click & collect</p> 
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="https://www.maxfashion.in/in/en/apps" > Download Our App</a>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <a href="https://www.maxfashion.in/in/en/storelocator" >Store Locator</a>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <a href="https://helpin.maxfashion.com/support/home#" >Help</a>
+        </div>
+      </div>
+    </div>
+    <div id="navbar">
+        <div>
+          <img onClick="homes()" id="currentPage" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxwomen"> Women</a></p></div>    
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxmen"> Men</a></p></div>
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxgirls"> Girls</a></p></div>
+          <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxboys">Boys</a></p></div>
+          <form action="">
+            <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="">
+            <div>
+              <input placeholder="What are you looking for?">
+            </div>
+          </form>     
+        </div>
+        <div>
+          <p>More</p>
+          <div class="vl"></div>
+          <p id="fun" onClick="signIn()">Sign Up / Sign In</p>
+          <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+          <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">         
+        </div>
+    </div>
+    <h1 style="text-align: center;font-size: 40px;">Favourite</h1>
+    <hr>
+    <div id="product"></div>
+  </body>
+  <script>
+
+    function signIn(){
+      document.location.href="Login.html";
+    }
+
+    function cart(){
+      document.location.href="cart.html";
+    }
+
+    function fav(){
+      document.location.href="fav.html";
+    }
+
+    let home=document.querySelector("#currentPage");
+    home.style.cursor="pointer";
+    function homes(){
+      document.location.href="index.html";
+    }
+    let cartItem=JSON.parse(localStorage.getItem("cart-item")) || [];
+    let favItem=JSON.parse(localStorage.getItem("fav-item")) || [];
+    displayProduct(favItem);
+    function displayProduct(favItem){
+      document.querySelector("#product").innerHTML="";
+
+      favItem.map(function(elem,i){
+        let box=document.createElement("div");
+        let cont=document.createElement("div");
+        let hold=document.createElement("div");
+        hold.style.display="flex";
+        hold.style.gap="60px";
+        
+        
+        let image=document.createElement("img");
+        image.setAttribute("src",elem.imgUrl);
+
+        let para=document.createElement("p");
+        para.innerText=elem.name;
+
+        let money=document.createElement("p");
+        money.innerText= "₹ " + elem.price;
+
+        let btn=document.createElement("button");
+        btn.innerText="Remove";
+        btn.addEventListener("click",function (){
+          favItem.splice(i,1);
+          btn.parentNode.remove();
+          localStorage.setItem("fav-item", JSON.stringify(favItem));
+          displayProduct(favItem);
+       });
+
+       let btn1=document.createElement("button");
+        btn1.innerText="Add to Cart";
+        btn1.addEventListener("click",function (){
+          cartItem.push(elem);
+          localStorage.setItem("cart-item", JSON.stringify(cartItem));
+
+          favItem.splice(i,1);
+          btn.parentNode.remove();
+          localStorage.setItem("fav-item", JSON.stringify(favItem));
+          displayProduct(favItem);
+       });
+      
+        box.append(image,money,para);
+        let anchor=document.createElement("a");
+        anchor.setAttribute("href",elem.pageUrl)
+        anchor.append(box);
+        hold.append(btn1,btn);
+        cont.append(anchor,hold)
+        document.querySelector('#product').append(cont);
+     }) 
+
+
+    }
+    
+            
+
+    
+  </script>
+</html>
