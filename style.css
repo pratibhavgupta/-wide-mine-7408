@@ -8,7 +8,6 @@ body{
     display: flex;
     color: white;
     justify-content: space-between;
-    
 }
 #top >div{
     display: flex;
@@ -111,109 +110,56 @@ a{
     margin-left: 13px;
     cursor: pointer;
 }
-#offer{
-    text-align: center;
-    background-color: blue;
-    height:50px;
-    display:flex;
-    cursor: pointer;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-}
-#slide{
-    width:96%;
-    height:auto;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-#slide >button{
-    height:10%;
-    font-size: 30px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-}
-#hrBorder{
-    display: grid;
-    gap: 15px;
-    width:90%;
-    grid-template-columns: repeat(4,1fr);
-    margin: auto;
-    margin-top: 30px;
-}
-#hrBorder >div {
-    border: 1px solid #ecedeb;
-}
-#sipping {
-    width:90%;
-    margin:auto;
-    margin-top: 90px;
-}
-#sipping >img{
-    width:100%;
-}
-hr{
-    width:90%;
-    margin-top: 50px;
-    margin-bottom: 65px;
-    border:1px solid #ecedeb;
-}
-.festive{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:20px;
-    width:90%;
-    margin: auto;
-}
-.festive img{
-    width:100%;
-}
-h1{
-    margin-left: 75px;
-    font-size: 36px;
-    font-weight: normal;
-}
-#category{
+#container{
     width:90%;
     height:auto;
     display:grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(2,auto);
-    column-gap:20px;
+    grid-template-columns: repeat(7,1fr);
     margin: auto;
+    gap:20px;
 }
-#category img{
+#container div{
+    display: flex;
+    padding: 8px;
+    border:1px solid #9e5e7f;
+}
+#container img{
+    width:30%
+}
+#sort{
     width:100%;
+    background-color: #f7f8f7;
+    height: 100px;
+    margin-top: 30px;
 }
-#category h3{
-    text-align: center;
+#sort select{
+    width:200px;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 70px;
+
 }
-#zone{
+#product{
     width:90%;
     height:auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
-    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    column-gap:25px;
+    row-gap: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-#zone img{
+#product img{
     width:100%;
 }
-.youth{
-    width:90%;
-    margin: auto;
-}
-.youth img{
-    width:100%;
-}
-.full{
-    width:100%;
-    color:#ecedeb
+#product button{
+    width:40%;
+    height:46px;
+    color:white;
+    background-color: blue;
+    cursor: pointer;
 }
 #footer{
     width:90%;
@@ -332,5 +278,8 @@ h1{
     margin: 10px 0px 30px 0px;
     color:#ecedeb;
 }
-
-
+.full{
+    width:100%;
+    color:#ecedeb;
+    margin-top: 40px;
+}

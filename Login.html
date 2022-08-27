@@ -7,13 +7,42 @@
         <title>Document</title>
         <style>
             #login{
-                width:30%;
-                height:370px;
+                width:35%;
+                height:350px;
                 margin: auto;
-                border:1px solid red;
                 margin-top: 100px;
                 display: grid;
-                padding:20px 100px 20px 100px;
+                grid-template-columns: repeat(1,auto);
+                grid-template-rows: repeat(5,45px);
+                padding:50px 100px 0px 100px;
+                box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+            }
+            #login h1 +p{
+                margin-top: 25px;
+                color:#9e5e7f;               
+            }
+            body{
+                margin:0px;
+                font-size: 14px;
+                font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            }            
+            input{
+              height: 40px;
+            }
+            hr{
+                width:100%;
+                height:1px;
+            }
+            button{
+                width:45%;
+                margin: -40px 0px 50px 265px;
+                background-color: blue;
+                color: white;
+                cursor: pointer;
+                border: none;
+            }
+            a{
+                text-decoration: none;
             }
         </style>
     </head>
@@ -21,10 +50,21 @@
         <div id="login">
             <h1>Sign up or Sign in</h1>
             <p>Enjoy the convenience of a single account across all participating brands</p>
-            <label for="">Mobile Number</label>
+            <p>Mobile Number</p> 
             <input type="number" placeholder="Enter your mobile number">
-            <p>By creating your account you agree to our <button>Terms and Conditions</button></p>
+            <p>By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions">Terms and Conditions</a></p>
+            <hr>
+            <button onClick="saveData()">CONTINUE</button>
         </div>
         
+        
     </body>
+    <script>
+        let mobArr=JSON.parse(localStorage.getItem("mob-data")) || [];
+        function saveData(){
+            let mobile=document.querySelector("input").value;
+            mobArr.push(mobile);
+            localStorage.setItem("mob-data",JSON.stringify(mobArr));
+        } 
+    </script>
 </html>
