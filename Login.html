@@ -60,12 +60,11 @@
         
     </body>
     <script>
-        let mobArr=JSON.parse(localStorage.getItem("mob-data")) || [];
         function saveData(){
             let mobile=document.querySelector("input").value;
-            mobArr.push(mobile);
-            localStorage.setItem("mob-data",JSON.stringify(mobArr));
+            localStorage.setItem("mob-data",mobile);
             document.location.href="mypage.html";
+            alert ("Login Successfull");
         } 
     </script>
 </html>

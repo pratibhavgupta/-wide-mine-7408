@@ -54,7 +54,7 @@
         <div>
           <p>More</p>
           <div class="vl"></div>
-          <p id="fun" onClick="signIn()">Pratibhav Gupta</p>
+          <p id="fun" onClick="signIn()">Sign Up / Sign In</p>
           <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
           <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">         
         </div>
@@ -349,19 +349,20 @@
         </div>
   </body>
   <script>
-    document.querySelector("#fun").innerText=localStorage.getItem("mob-data");
+    
     function signIn(){
+        document.location.href="Login.html";
       
-      alert ("Already Login")
       
     }
 
     function cart(){
-      document.location.href="cart.html";
+        alert ("Please Log In firstly")
+        
     }
 
     function fav(){
-      document.location.href="fav.html";
+        alert ("Please Log In firstly")
     }
 
     let home=document.querySelector("#currentPage");
@@ -420,17 +421,13 @@
         let btn=document.createElement("button");
         btn.innerText="Add to Cart";
         btn.addEventListener("click",function (){
-          cartArr.push(elem);
-          btn.innerText="Add+ to Cart";
-          localStorage.setItem("fav-item", JSON.stringify(cartArr));
+          alert ("Please Log In firstly")
        });
 
        let btn1=document.createElement("button");
         btn1.innerText="Add to Fav";
         btn1.addEventListener("click",function (){
-          favArr.push(elem);
-          btn1.innerText="Add+ to Fav";
-          localStorage.setItem("cart-item", JSON.stringify(favArr));
+            alert ("Please Log In firstly");
        });
       
         box.append(image,money,para);

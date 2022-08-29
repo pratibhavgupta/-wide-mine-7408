@@ -55,7 +55,7 @@
             <div>
                 <p>More</p>
                 <div class="vl"></div>
-                <p id="fun" onClick="signIn()">Pratibhav Gupta</p>
+                <p id="fun" onClick="signIn()">Sign Up / Sign In</p>
                 <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
                 <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">
                 
@@ -522,12 +522,14 @@
         </div>
     </body>
     <script>
+        document.querySelector("#fun").innerText=localStorage.getItem("mob-data");
         function myOffer(){
             document.location.href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499";
         }
        
         function signIn(){
            document.location.href="mypage.html";
+           alert ("Already Login")
         }
        
         let emailArr=JSON.parse(localStorage.getItem("email-data")) || [];

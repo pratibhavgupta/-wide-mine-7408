@@ -64,9 +64,11 @@
     <div id="product"></div>
   </body>
   <script>
-
+    document.querySelector("#fun").innerText=localStorage.getItem("mob-data");
     function signIn(){
-      document.location.href="mypage.html";
+      document.location.href="cart.html";
+      alert ("Already Login")
+      
     }
 
     function cart(){
@@ -80,7 +82,7 @@
     let home=document.querySelector("#currentPage");
     home.style.cursor="pointer";
     function homes(){
-      document.location.href="index.html";
+      document.location.href="mypage.html";
     }
     
     let favArr=JSON.parse(localStorage.getItem("fav-item")) || [];
