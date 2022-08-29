@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div id="top">
+            <div>
+                <div class="withIcon">
+                    <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg" alt=""> 
+                    <p>Free Shipping</p> 
+                </div>
+                <div class="withIcon">
+                    <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/RTS-icon-19Nov2019.png" alt="">
+                    <p>Return to Store</p> 
+                </div>
+                <div class="withIcon">
+                    <img src="https://i.postimg.cc/pd5H1H0s/Desktop-regular.png" alt="">
+                    <p>Click & collect</p> 
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.maxfashion.in/in/en/apps" > Download Our App</a>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <a href="https://www.maxfashion.in/in/en/storelocator" >Store Locator</a>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <a href="https://helpin.maxfashion.com/support/home#" >Help</a>
+                </div>
+
+            </div>
+        </div>
+        <div id="navbar">
+            <div>
+                <img onClick="homes()" id="currentPage" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">
+                <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxwomen"> Women</a></p></div>    
+                <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxmen"> Men</a></p></div>
+                <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxgirls"> Girls</a></p></div>
+                <div class="hov"><p> <a href="https://www.maxfashion.in/in/en/department/maxboys">Boys</a></p></div>
+                <form action="">
+                    <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="">
+                    <div>
+                        <input placeholder="What are you looking for?">
+                    </div>
+                </form>     
+            </div>
+            <div>
+                <p>More</p>
+                <div class="vl"></div>
+                <p id="fun" onClick="signIn()">Pratibhav Gupta</p>
+                <img onClick="fav()" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+                <img onClick="cart()" src="https://cdn-icons-png.flaticon.com/128/6421/6421855.png" alt="">
+                
+            </div>
+        </div>
+        <div id="offer" onClick="myOffer()">
+            <p>Buy 3 @ ₹499 & Get FREE Shipping ></p>
+        </div>
+        <div id="slide">
+            <button> < </button>
+            <a href="womens.html">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=85,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-MenWomen-26Aug2022.gif" alt="">
+            </a>
+            
+            <button>></button>
+        </div>
+        <div id="hrBorder">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen">
+            <div id="sipping">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBytwo1A-CommonFREESHIPPING-26Aug2022.png" alt="">
+            </div>
+        </a>
+        <hr>
+        <h1>Festive Corner</h1>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Women-11Aug2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=badge.invisible%3AAQ77">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-B-Women-18Aug2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <h1>Shop By Category</h1>
+        <div id="category">  
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen%3AsizeSystem%3A4XL%3AsizeSystem%3A5XL%3AsizeSystem%3A6XL">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-1-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Plus Size 3XL - 6XL</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen%3Abadge.title.en%3AONLINE%20ONLY">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-2-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Available Online Only</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-tops-topsandtees">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-3-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Topwear</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-dressesandjumpsuits">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-4-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Dresses</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-bottoms">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-5-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Bottomwear</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear-kurtasandkurtis">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-6-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Kurtas</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear-dresses">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-7-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Fusion Dresses</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear-salwarsuits">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-8-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Suit Sets</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen-ethnicwear-palazzosandculottes%3AallCategories%3Amaxwomen-indianwear-skirts%3AallCategories%3Amaxwomen-ethnicwear-churidars">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-9-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Ethnic Bottoms</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-sportswear">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-10-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Activewear</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen-sleepwear%3AallCategories%3Amaxwomen-lingerie">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-11-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Sleepwear & Lingerie</h3>
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen-shoes%3AallCategories%3Amaxwomen-accessories">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-12-Desktop-Women-18JULY2022.png" alt="">
+                    <h3>Outfit Add-ons</h3>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <h1>Relaxed Wide Legs</h1>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAQ69%3AallCategories%3Amaxwomen-bottoms">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-D-Women-18Aug2022A.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAQ69%3AallCategories%3Amaxwomen-ethnicwear">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-5modularblock-oneBytwo1D-Women-18Aug2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <h1>Budget Zone</h1>
+        <div id="zone">
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen&price=10,499&range=10,2999">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19One-Women-18JULY2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen&price=10,699&range=10,2999">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Two-Women-18JULY2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen&price=10,999&range=10,2999">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Three-Women-18JULY2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <h1>Youth Store</h1>
+        <div class="youth">
+            <a href="https://www.maxfashion.in/in/en/c/maxwomen-young">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBytwo1A-Women-18JULY2022.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <h1>Trends</h1>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAS36%3AallCategories%3Amaxwomen">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock7-oneBythree-A-Women-11Aug2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAS34%3AallCategories%3Amaxwomen">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock7-oneBythree-B-Womenn-11Aug2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAS55%3AallCategories%3Amaxwomen">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-D-Women-18Aug2022A.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/search?q=%3Abadge.invisible%3AAS35%3AallCategories%3Amaxwomen">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-5modularblock-oneBytwo1D-Women-18Aug2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <h1>Top Stores</h1>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/maxcurves22">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock15One-Women-02JUNE2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/OE22">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock15Two-Women-02JUNE2022.png" alt="">
+                </div>
+            </a>  
+        </div>
+        <hr>
+        <div class="festive">
+            <a href="https://www.maxfashion.in/in/en/TRW">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock16One-Women-28JULY2022.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.maxfashion.in/in/en/worldofbottoms">
+                <div>
+                    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock16Two-Women-28JULY2022.png" alt="">
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="youth">
+            <a href="https://www.maxfashion.in/in/en/search?q=%3AallCategories%3Amaxwomen">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-9modularblock-oneBythree-A-Women-18JULY2022.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <h1>Gifting Zone</h1>
+        <div class="youth">
+            <a href="https://www.woohoo.in/max-online-e-gift-instant-voucher">
+                <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock14One-Women-26Oct2021.jpg" alt="">
+            </a>
+        </div>
+        <hr>
+        <h1>Connect With Us</h1>
+        <div class="youth">
+            <a href="https://api.whatsapp.com/send?phone=916366874274&text=I%20would%20like%20to%20sign-up%20to%20receive%20updates%20from%20Max%20Fashion">
+                <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock8-oneBythree-A-Women-21Oct2020.jpg" alt="">
+            </a>
+        </div>
+        <hr class="full">
+        <div id="footer">
+            <div id="first">
+                <div>
+                    <h2>Subscribe to our awesome emails.</h2>
+                    <p>Get our latest offers and news straight in your inbox.</p>
+                    <form action="">
+                        <input type="email" placeholder="Please enter an email address">
+                        <button onClick="store()">Subscribe</button>
+                        
+                    </form>
+                    <p id="valid"></p>
+                </div>
+                <div>
+                    <h2>Download our apps</h2>
+                    <p>Shop our products and offers on-the-go.</p>
+                    <div>
+                        <a href="https://itunes.apple.com/us/app/max-fashion/id1180884624?ls=1&mt=8">
+                            <img src="https://i1.lmsin.net/website_images/misc/apple-app-store.svg" alt="">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.applications.max">
+                            <img src="https://i1.lmsin.net/website_images/misc/google-play-store.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="second">
+                <div>
+                    <h4>Women</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-dressesandjumpsuits">
+                        <p>Dresses & Jumpsuits</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-sportswear">
+                        <p>Sportswear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-winterwear">
+                        <p>Winterwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-ethnicwear">
+                        <p>Ethnicwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-lingerie">
+                        <p>Lingerie</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxwomen-sleepwear">
+                        <p>Sleepwear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxaccessories-women">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxshoes-women">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Men</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-winterwear">
+                        <p>Winterwear</p>
+                    </a>    
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxmen-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Boys</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-indianwear">
+                        <p>Indian Wear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-winterwear">
+                        <p>Winter Wear</p>
+                    </a> 
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-essentials">
+                        <p>Essentials</p>
+                    </a>   
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxboys-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Girls</h4>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-tops">
+                        <p>Tops</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-bottoms">
+                        <p>Bottoms</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-indianwear">
+                        <p>Indian Wear</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-winterwear">
+                        <p>Winter Wear</p>
+                    </a> 
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-essentials">
+                        <p>Essentials</p>
+                    </a>   
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-accessories">
+                        <p>Accessories</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/c/maxgirls-shoes">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <a href="https://www.maxfashion.in/in/en/offers">
+                        <p>Offers</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/magazine">
+                        <p>Magazine</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>About</h4>
+                    <a href="https://www.maxfashion.in/in/en/about">
+                        <p>About us</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/write-to-us">
+                        <p>Write to us</p>
+                    </a>
+                    <a href="https://www.linkedin.com/company/max-fashion-india/jobs/">
+                        <p>Careers</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/tour">
+                        <p>Take a Tour</p>
+                    </a>
+                    <a href="https://maxloves.maxfashion.in/">
+                        <p>Blog</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/storelocator">
+                        <p>Store Locator</p>
+                    </a>
+                    <a href="http://landmarkcares.in/">
+                        <p>Landmark</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <a href="https://www.maxfashion.in/in/en/contact">
+                        <p>Contact us</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/helpShipping">
+                        <p>Shipping</p>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/return">
+                        <p>Returns Process</p>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/support/solutions/folders/9000196215">
+                        <p>Returns Policy</p>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/">
+                        <p>Help Centre</p>
+                    </a>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="third">
+                <div>
+                    <a href="tel:1800-123-1444">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-phone.svg" alt="">
+                            <div>
+                                <p>Talk to us</p>
+                                <p>1800-123-1444</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://helpin.maxfashion.com/">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-help.svg" alt="">
+                            <div>
+                                <p>Helpcentre</p>
+                                <p>help.maxfashion.in</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.maxfashion.in/in/en/write-to-us">
+                        <div>
+                            <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/contact-mail.svg" alt="">
+                            <div>
+                                <p>Write to us</p>
+                                <p>help.in@maxfashion.com</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/maxfashions/">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/fb-icon.svg" alt="">
+                    </a>
+                    <a href="https://www.twitter.com/@maxfashionindia">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/twitter-icon.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/maxfashionindia">
+                        <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/instagram-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <hr class="full2">
+            <div id="fourth">
+                <a href="mypage.html">
+                    <img src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="">  
+                </a>
+                <div>
+                    <p>© 2022 RNA Intellectual Property Limited. <br><a href="https://www.maxfashion.in/in/en/termsandconditions">Terms & Conditions</a> - <a href="https://www.maxfashion.in/in/en/privacypolicy">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function myOffer(){
+            document.location.href="https://www.maxfashion.in/in/en/search?q=%3Abadge.title.en%3ABuy%203%20at%20999%3Abadge.title.en%3ABuy%203%20at%20699%3Abadge.title.en%3ABuy%203%20at%201499%3Abadge.title.en%3ABuy%203%20at%20499";
+        }
+       
+        function signIn(){
+           document.location.href="mypage.html";
+        }
+       
+        let emailArr=JSON.parse(localStorage.getItem("email-data")) || [];
+        function store(){
+            let email=document.querySelector("#first input").value;
+            emailArr.push(email);
+            localStorage.setItem("email-data",JSON.stringify(emailArr));
+        }
+       
+        let home=document.querySelector("#currentPage");
+        home.style.cursor="pointer";
+        function homes(){
+            document.location.href="mypage.html";
+        }
+        
+        function cart(){
+            document.location.href="cart.html";
+        }
+
+        function fav(){
+            document.location.href="fav.html";
+        }
+    </script>
+</html>
